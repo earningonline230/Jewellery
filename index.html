@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Image Copy and Share</title>
+ <style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+ </style>
+</head>
+<body>
+	<h1 style="text-align: center"> ALL New Jewellery  </h1>
+	<h2 style="text-align: center"> Beautifull Ring </h2>
+	<img id="myImage" src="https://raw.githubusercontent.com/earningonline230/Store1/main/IMG_20240106_221026.jpg" alt="A beautiful Ring">
+	<h5 style="text-align: center"> Price 200 per piece  </h5>
+	<h5 style="text-align: center"> Order no jewellery 01</h5>
+ <center><button id="copyShareButton">Copy and Share Image</button>
+ <a style="background:green; "href="https://wa.me/+923132197796" class="download-button">Contact on WhatsApp</a>  <br>
+
+ <script>
+    document.getElementById('copyShareButton').addEventListener('click', function() {
+      copyShareImage();
+    });
+
+    async function copyShareImage() {
+      // Copy the image to the clipboard
+      const imageUrl = document.getElementById('myImage').src;
+      try {
+        await navigator.clipboard.writeText(imageUrl);
+        console.log('Image URL copied to clipboard:', imageUrl);
+      } catch (err) {
+        console.error('Failed to copy image URL:', err);
+      }
+
+      // Create a new anchor element, set its href attribute to the copied image URL, and simulate a click event to initiate the sharing process
+      const link = document.createElement('a');
+      link.href = imageUrl;
+      const linkClickEvent = new MouseEvent('click');
+      link.dispatchEvent(linkClickEvent);
+    }
+ </script>
+ </style>
+</head>
+<body>
+	<h1 style="text-align: center"> ALL New Jewellery  </h1>
+	<h2 style="text-align: center"> Beautifull Ring </h2>
+	<img id="myImage" src="https://raw.githubusercontent.com/earningonline230/Jewellery/main/BeautyPlus_20240108143140968_save.jpg" alt="A beautiful Ring">
+	<h5 style="text-align: center"> Price 150 per piece  </h5>
+	<h5 style="text-align: center"> Order no jewellery 02</h5>
+ <center><button id="copyShareButton">Copy and Share Image</button>
+ <a style="background:green; "href="https://wa.me/+923132197796" class="download-button">Contact on WhatsApp</a>  <br>
+
+ <script>
+    document.getElementById('copyShareButton').addEventListener('click', function() {
+      copyShareImage();
+    });
+
+    async function copyShareImage() {
+      // Copy the image to the clipboard
+      const imageUrl = document.getElementById('myImage').src;
+      try {
+        await navigator.clipboard.writeText(imageUrl);
+        console.log('Image URL copied to clipboard:', imageUrl);
+      } catch (err) {
+        console.error('Failed to copy image URL:', err);
+      }
+
+      // Create a new anchor element, set its href attribute to the copied image URL, and simulate a click event to initiate the sharing process
+      const link = document.createElement('a');
+      link.href = imageUrl;
+      const linkClickEvent = new MouseEvent('click');
+      link.dispatchEvent(linkClickEvent);
+    }
+ </script>
+ </style>
+</head>
+<body>
+	<h1 style="text-align: center"> ALL New Jewellery  </h1>
+	<h2 style="text-align: center"> Beautifull Ring </h2>
+	<img id="myImage" src="https://raw.githubusercontent.com/earningonline230/Jewellery/main/BeautyPlus_20240108143425012_save.jpg" alt="A beautiful Ring">
+	<h5 style="text-align: center"> Price 150 per piece  </h5>
+	<h5 style="text-align: center"> Order no jewellery 03</h5>
+ <center><button id="copyShareButton">Copy and Share Image</button>
+ <a style="background:green; "href="https://wa.me/+923132197796" class="download-button">Contact on WhatsApp</a>  <br>
+
+ <script>
+    document.getElementById('copyShareButton').addEventListener('click', function() {
+      copyShareImage();
+    });
+
+    async function copyShareImage() {
+      // Copy the image to the clipboard
+      const imageUrl = document.getElementById('myImage').src;
+      try {
+        await navigator.clipboard.writeText(imageUrl);
+        console.log('Image URL copied to clipboard:', imageUrl);
+      } catch (err) {
+        console.error('Failed to copy image URL:', err);
+      }
+
+      // Create a new anchor element, set its href attribute to the copied image URL, and simulate a click event to initiate the sharing process
+      const link = document.createElement('a');
+      link.href = imageUrl;
+      const linkClickEvent = new MouseEvent('click');
+      link.dispatchEvent(linkClickEvent);
+    }
+ </script>
+</body>
+</html>
